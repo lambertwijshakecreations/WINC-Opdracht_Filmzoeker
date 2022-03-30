@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmzoeker</title> 
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+<header class="header">
+    <h1>Welkom op de Lambert Wijshake Creations filmzoeker!</h1>
+
+    <nav id="radioBtnFilters" class="header__nav">
+
+        <div class="header__input">
+
+            <input type="text" list="suggestions" id="inputField" class="header__input--field" placeholder="Titel">
+                <datalist id="suggestions">
+                    <option value="X-Men: Days of Future Past"></option>
+                    <option value="X-Men: First Class"></option>
+                    <option value="X-Men"></option>
+                    <option value="X2: X-Men United"></option>
+                    <option value="X-Men: The Last Stand"></option>
+                    <option value="X-Men Origins: Wolverine"></option>
+                    <option value="X-Men: Apocalypse"></option>
+                    <option value="X-Men: The Animated Series"></option>
+                    <option value="X-Men: Evolution"></option>
+                    <option value="Wolverine and the X-Men"></option>
+                    <option value="The Avengers"></option>
+                    <option value="Avengers: Infinity War"></option>
+                    <option value="Avengers: Age of Ultron"></option>
+                    <option value="Avengers: Endgame"></option>
+                    <option value="The Avengers: Earth's Mightiest Heroes"></option>
+                    <option value="Ultimate Avengers"></option>
+                    <option value="Ultimate Avengers II"></option>
+                    <option value="Batman Begins"></option>
+                    <option value="Batman v Superman: Dawn of Justice"></option>
+                    <option value="Batman"></option>
+                    <option value="Batman Returns"></option>
+                    <option value="Batman Forever"></option>
+                    <option value="Batman & Robin"></option>
+                    <option value="The Lego Batman Movie"></option>
+                    <option value="Batman: The Animated Series"></option>
+                    <option value="Batman: Under the Red Hood"></option>
+                    <option value="Batman: The Dark Knight Returns, Part 1"></option>
+                    <option value="The Princess Bride"></option>
+                    <option value="Princess Mononoke"></option>
+                    <option value="The Princess Diaries"></option>
+                    <option value="The Princess and the Frog"></option>
+                    <option value="The Princess Diaries 2: Royal Engagement"></option>
+                    <option value="Xena: Warrior Princess"></option>
+                </datalist>
+                <button id="searchButton">Zoek</button>
+       </div>
+
+       <div class="header__buttons">
+
+        <ul id="radiobtn">
+
+            <li><label><input type="radio" id="nieuwste-films" name="movies" value="nieuwste-films">Nieuwste Films vanaf 2014</label></li>
+            <li><label><input type="radio" id="avengers-films" name="movies" value="avengers-films">Avengers Films</label></li>
+            <li><label><input type="radio" id="xmen-films" name="movies" value="xmen-films">X-men Films</label></li>
+            <li><label><input type="radio" id="princess-films" name="movies" value="princess-films">Princess Films</label></li>
+            <li><label><input type="radio" id="batman-films" name="movies" value="batman-films">Batman Films</label></li>
+        </ul>
+    </div>
+
+    </nav>
+</header>
+
+
+<main>
+    <div class="poster-container">
+   <ul id="movielist" class="main__list" >
+
+   </ul>
+</div>
+</main>
+
+<footer>
+    <h5>Deze filmzoeker is gemaakt voor de Front-end Development eindopdracht 'Filmzoeker' van Winc Academy. </h5>
+    <h6>04/2021(versie1), 12/2021(versie2)</h6>
+</footer>
+
+<script defer src="./JavaScript/movies.js"></script>
+<script defer src="./JavaScript/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+@import "./variabelen";
+
+body {
+  background: $main-background;
+  color: $main-text;
+  margin:0;
+  padding:0;
+  width:100%;
+}
+
+* li {
+  list-style: none;
+}
+
+.header {
+    h1 {
+    font-size: 1.6em;
+    text-shadow: 0 0 3px black,
+    0 0 10px white;
+    text-align: center;
+    border-bottom: 1px dashed white;
+    padding-bottom: 15px;;
+  }
+  h4 {
+    text-align: center;
+  }
+  label {
+    font-size: 0.9em;
+  }
+}
+
+.header__input {
+display: flex;
+justify-content: center; 
+border-bottom: 1px dashed #FFF;
+padding-bottom:10px;
+}
+
+.header__buttons{
+  display: flex;
+ justify-content: center;
+}
+
+.poster-container{
+  width:100%;
+  display: grid;
+  justify-content: center;
+  ul{
+  display:grid;
+  grid-template-columns: 150px 150px;
+  justify-content: center;
+  padding:0;
+  }
+  li{
+    margin: 5px auto;
+    & :hover{
+      box-shadow: 0 0 10px lightgray;
+
+    }
+    img{
+      width: 140px;
+    }
+  }
+}
+
+
+
+footer {
+  border-top: 1px dashed white;
+  padding-top: 5px;
+  h5 {
+  text-align: center;
+  }
+  h6{
+    text-align: center;
+  }
+ 
+}
+
+
+@media only screen and (min-width: 600px){
+
+  .header__buttons{
+    ul{
+      display: flex;
+      padding:auto;
+      li{
+        text-align:center;
+      }
+    }
+  }
+
+  .poster-container{
+    ul{
+      display:grid;
+      grid-template-columns: repeat(3, 150px);
+      justify-content: center;
+      padding:0;
+      }
+  }
+
+}
+
+@media only screen and (min-width: 768px){
+  
+  .poster-container{
+    ul{
+      display:grid;
+      grid-template-columns: repeat(4, 150px);
+      justify-content: center;
+      padding:0;
+      }
+  }
+
+  .header__buttons{
+    ul{
+      li{
+        margin:0 10px;
+      }
+    }
+  }
+
+}
+
+
+@media only screen and (min-width: 992px){
+  
+  .poster-container{
+    ul{
+      display:grid;
+      grid-template-columns: repeat(5, 150px);
+      justify-content: center;
+      padding:0;
+      }
+  }
+
+}
+
+
+@media only screen and (min-width: 1200px){
+  .poster-container{
+    ul{
+      display:grid;
+      grid-template-columns: repeat(6, 150px);
+      justify-content: center;
+      padding:0;
+      }
+  }
+}
